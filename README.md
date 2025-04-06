@@ -1,6 +1,13 @@
 # 🫁 Lung-Cancer-CT-Scan-Detection-Using-CNN
 This project is a deep learning-based application for detecting lung cancer from CT scan images using a Convolutional Neural Network (CNN). It includes a full GUI built with Tkinter, allowing users to upload CT scan images and receive predictions in real time.
 
+### 📁 Dataset Download
+
+You can download the full Lung Cancer dataset used in this project from the link below:
+
+🔗 [Download Lung Cancer Dataset (Google Drive)](https://drive.google.com/file/d/1KQB5f3MJL_jnsesh8OuzffkpBYhTI3SI/view?usp=drive_link)
+
+
 ## 📁 Project Structure
 
 ![image](https://github.com/user-attachments/assets/c3b51d5c-a4e0-4f58-a901-05bd2edefaa3)
