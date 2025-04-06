@@ -2,17 +2,9 @@
 This project is a deep learning-based application for detecting lung cancer from CT scan images using a Convolutional Neural Network (CNN). It includes a full GUI built with Tkinter, allowing users to upload CT scan images and receive predictions in real time.
 
 ## 📁 Project Structure
-LungCancerDetection/
-├── preprocess.py
-├── cnn_model.py
-├── train_cnn_model.py
-├── lung_cancer_cnn_model.keras
-├── app_gui.py
-├── README.md
-└── LungcancerDataSet/
-    ├── train/
-    ├── valid/
-    └── test/
+
+![image](https://github.com/user-attachments/assets/c3b51d5c-a4e0-4f58-a901-05bd2edefaa3)
+
 
 ## ✅ Features
 - Image preprocessing with real-time augmentation
