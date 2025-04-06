@@ -20,15 +20,38 @@ This project is a deep learning-based application for detecting lung cancer from
 - pip install tensorflow pillow numpy
 
 ## 🧠 How to Train the Model
-### Place your dataset under LungcancerDataSet/Data/ with the following structure:
+1. Place your dataset under LungcancerDataSet/Data/ with the following structure:
 
-Data/
-├── train/
-│   ├── Cancerous/
-│   └── Non-Cancerous/
-├── valid/
-│   ├── Cancerous/
-│   └── Non-Cancerous/
-└── test/
-    ├── Cancerous/
-    └── Non-Cancerous/
+![image](https://github.com/user-attachments/assets/b3fee6aa-55ba-44b5-a4e3-e8780b34e29e)
+
+2. Run the training script:
+   - python train_cnn_model.py
+     
+This will:
+- Train the CNN model on the dataset
+- Save the trained model as lung_cancer_cnn_model.keras
+- Print final test accuracy
+
+## 🖼️ How to Run the GUI App
+1. Ensure the trained model file lung_cancer_cnn_model.keras is present in the project directory.
+2. Run the GUI application:
+   - python app_gui.py
+     
+3. The app will open a window:
+- Enter patient information
+- Upload a CT scan image
+- Click Submit to get prediction
+
+## 📊 Model Overview
+### The CNN model includes:
+
+- 3 Convolutional layers with BatchNormalization and MaxPooling
+- GlobalAveragePooling before fully connected layers
+- Dropout regularization
+- Sigmoid output layer for binary classification
+
+## 📌 Notes
+- Make sure your dataset path is correct in all scripts.
+- The current model expects images resized to 224x224.
+- The GUI is designed for binary classification only.
+- If modifying class names, also update class_labels in app_gui.py.
